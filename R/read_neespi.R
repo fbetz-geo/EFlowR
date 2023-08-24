@@ -10,7 +10,7 @@
 read_neespi<-function(file){
 
   #Read the raw file
-  file<-read.csv(file = file,skip = 1,header = FALSE,sep="\t")
+  file<-read.csv(file = file,skip = 1,header = FALSE,sep="\t",na.strings ="-9999.000")
   df<-data.frame(date=readr::parse_date(substr(file$V1,1,7),format="%Y-%m")) %>% mutate(month=lubridate::month(date)) %>% mutate(value=file$V3)
   return(df)
 }

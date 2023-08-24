@@ -4,7 +4,7 @@
 \alias{apfd}
 \title{Annual Proportional Flow Deviation}
 \usage{
-apfd(flow, dates, ref_start, ref_end)
+apfd(flow, dates, ref_start, ref_end, date_format)
 }
 \arguments{
 \item{flow}{vector of (monthly) streamflow data}
