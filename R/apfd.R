@@ -14,7 +14,7 @@
 #' @return numeric value of the flow alteration ranging from 0 (unmodified) to 3.46 (fully modified)
 #'
 
-apfd<-function(flow,dates,ref_start,ref_end){
+apfd<-function(flow,dates,ref_start,ref_end,date_format){
 
   #create data.frame for subsequent analysis
   dates<-lubridate::parse_date_time(x = dates,orders=date_format)
