@@ -38,6 +38,4 @@ apfd<-function(flow,dates,ref_start,ref_end,date_format){
   #Compute flow alteration metric
   apfd<-sum((abs(df_an$mean_flow-df_ref$mean_flow))/df_ref$mean_flow)
   return(apfd)
-
-
 }
